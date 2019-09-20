@@ -8,13 +8,13 @@ export class BookInput extends Component {
   state = {
     title: '',
     authorName: ''
-  }
+  };
 
   handleOnChange = event => {
     this.setState({
       [event.target.name]: event.target.value
     });
-  }
+  };
 
 
   handleOnSubmit = event => {
@@ -25,7 +25,7 @@ export class BookInput extends Component {
       title: '',
       authorName: ''
     });
-  }
+  };
 
   render() {
     return(
@@ -50,6 +50,6 @@ export class BookInput extends Component {
       </form>
     );
   }
-};
+}
 
 export default connect(null, { addBook })(BookInput);

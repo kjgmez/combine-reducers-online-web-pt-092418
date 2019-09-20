@@ -7,13 +7,13 @@ export class AuthorInput extends Component {
 
   state = {
     authorName: '',
-  }
+  };
 
   handleOnChange = event => {
     this.setState({
       [event.target.name]: event.target.value
     });
-  }
+  };
 
 
   handleOnSubmit = event => {
@@ -23,7 +23,7 @@ export class AuthorInput extends Component {
     this.setState({
       authorName: ''
     });
-  }
+  };
 
   render() {
     return(
@@ -40,6 +40,6 @@ export class AuthorInput extends Component {
       </form>
     );
   }
-};
+}
 
 export default connect(null, { addAuthor })(AuthorInput);
